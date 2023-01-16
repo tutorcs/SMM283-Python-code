@@ -1,0 +1,10 @@
+from __future__ import print_function
+
+sumData = 0.0
+data = input("Enter a number of press \'Enter\' to quit: ")
+
+while data != "":
+      sumData += float(data)
+      data = input("Enter a number of press \'Enter\' to quit: ")
+
+print("Sum: %.4f" % sumData)

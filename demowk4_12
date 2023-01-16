@@ -1,0 +1,13 @@
+##----------------------------------------
+def inputInt(msg):
+    a = input(msg)
+    return a
+##------------------------------------------
+##the mainline function..the control module
+##for the entire program
+def main():
+    x = inptInt("Enter an integer: ")
+    print(x)
+##----------------------------------------
+##call main
+main()

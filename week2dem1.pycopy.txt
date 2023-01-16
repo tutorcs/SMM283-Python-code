@@ -1,0 +1,14 @@
+##
+##  A simple  financial balance calculator
+##  Using core Python  features
+
+initialBalance = eval(raw_input("Enter initial balance: "))
+annualRate = eval(raw_input("Enter annual interest rate (0.0 to 1.0): "))
+monthlyInterestRate = annualInterestRate / 12
+
+##Display table
+print("{0:<7s}{1:<10s}".format("Month", "Balance"))
+print("--------------------------")
+for i in range(3, 13, 3):
+    balance = initialBalance * ((1+monthlyInterestRate)**i)
+    print("{0:<7d}£{1:<8.2f}".format(i, balance))
